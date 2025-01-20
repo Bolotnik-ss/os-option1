@@ -1,0 +1,519 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage[normalem]{ulem}
+\usepackage{soul}
+\usepackage{array}
+\usepackage{amssymb}
+\usepackage{extarrows}
+\usepackage{graphicx}
+\usepackage[backend=biber,
+style=numeric,
+sorting=none,
+isbn=false,
+doi=false,
+url=false,
+]{biblatex}\addbibresource{bibliography.bib}
+
+\usepackage{subfig}
+\usepackage{wrapfig}
+\usepackage{txfonts}
+\usepackage{wasysym}
+\usepackage{enumitem}
+\usepackage{adjustbox}
+\usepackage{ragged2e}
+\usepackage[svgnames,table]{xcolor}
+\usepackage{tikz}
+\usepackage{longtable}
+\usepackage{changepage}
+\usepackage{setspace}
+\usepackage{hhline}
+\usepackage{multicol}
+\usepackage{tabto}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{fancyhdr}
+\usepackage[toc,page]{appendix}
+\usepackage[hidelinks]{hyperref}
+\usetikzlibrary{shapes.symbols,shapes.geometric,shadows,arrows.meta}
+\tikzset{>={Latex[width=1.5mm,length=2mm]}}
+\usepackage{flowchart}\usepackage[paperheight=11.69in,paperwidth=8.27in,left=1.18in,right=0.39in,top=0.79in,bottom=0.79in,headheight=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[T1,T2A]{fontenc}
+\usepackage{url}
+\TabPositions{0.5in,1.0in,1.5in,2.0in,2.5in,3.0in,3.5in,4.0in,4.5in,5.0in,5.5in,6.0in,6.5in,}
+
+\urlstyle{same}
+
+
+ %%%%%%%%%%%%  Set Depths for Sections  %%%%%%%%%%%%%%
+
+% 1) Section
+% 1.1) SubSection
+% 1.1.1) SubSubSection
+% 1.1.1.1) Paragraph
+% 1.1.1.1.1) Subparagraph
+
+
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+
+ %%%%%%%%%%%%  Set Depths for Nested Lists created by \begin{enumerate}  %%%%%%%%%%%%%%
+
+
+\setlistdepth{9}
+\renewlist{enumerate}{enumerate}{9}
+		\setlist[enumerate,1]{label=\arabic*)}
+		\setlist[enumerate,2]{label=\alph*)}
+		\setlist[enumerate,3]{label=(\roman*)}
+		\setlist[enumerate,4]{label=(\arabic*)}
+		\setlist[enumerate,5]{label=(\Alph*)}
+		\setlist[enumerate,6]{label=(\Roman*)}
+		\setlist[enumerate,7]{label=\arabic*}
+		\setlist[enumerate,8]{label=\alph*}
+		\setlist[enumerate,9]{label=\roman*}
+
+\renewlist{itemize}{itemize}{9}
+		\setlist[itemize]{label=$\cdot$}
+		\setlist[itemize,1]{label=\textbullet}
+		\setlist[itemize,2]{label=$\circ$}
+		\setlist[itemize,3]{label=$\ast$}
+		\setlist[itemize,4]{label=$\dagger$}
+		\setlist[itemize,5]{label=$\triangleright$}
+		\setlist[itemize,6]{label=$\bigstar$}
+		\setlist[itemize,7]{label=$\blacklozenge$}
+		\setlist[itemize,8]{label=$\prime$}
+
+\pagenumbering{gobble}
+\setlength{\topsep}{0pt}\setlength{\parskip}{9.96pt}
+\setlength{\parindent}{0pt}
+
+ %%%%%%%%%%%%  This sets linespacing (verticle gap between Lines) Default=1 %%%%%%%%%%%%%%
+
+
+\renewcommand{\arraystretch}{1.3}
+
+
+%%%%%%%%%%%%%%%%%%%% Document code starts here %%%%%%%%%%%%%%%%%%%%
+
+\sloppy
+
+\begin{document}
+\begin{Center}
+ГУАП
+\end{Center}\par
+
+\begin{Center}
+КАФЕДРА № 43
+\end{Center}\par
+\vspace{\baselineskip}
+ОТЧЕТ \\
+ЗАЩИЩЕН С ОЦЕНКОЙ\par
+
+ПРЕПОДАВАТЕЛЬ\par
+
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 1 starts here %%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{2.05in}p{0.0in}p{1.76in}p{-0.01in}p{1.89in}}
+%row no:1
+\multicolumn{1}{p{2.05in}}{\Centering {старший преподаватель}} & 
+\multicolumn{1}{p{0.0in}}{} & 
+\multicolumn{1}{p{1.76in}}{} & 
+\multicolumn{1}{p{-0.01in}}{} & 
+\multicolumn{1}{p{1.89in}}{\Centering {М. Д. Поляк}} \\
+\hhline{-~-~-}
+%row no:2
+\multicolumn{1}{p{2.05in}} {\Centering{\fontsize{10pt}{12.0pt}\selectfont  {должность, уч. степень, звание}}} & 
+\multicolumn{1}{p{0.0in}}{} & 
+\multicolumn{1}{p{1.76in}} {\Centering{\fontsize{10pt}{12.0pt}\selectfont  {подпись, дата}}} & 
+\multicolumn{1}{p{-0.01in}}{} & 
+\multicolumn{1}{p{1.89in}} {\Centering{\fontsize{10pt}{12.0pt}\selectfont  {инициалы, фамилия}}} \\
+\hhline{~~~~~}
+
+\end{tabular}
+ \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 1 ends here %%%%%%%%%%%%%%%%%%%%
+
+
+\vspace{\baselineskip}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 2 starts here %%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{6.49in}}
+%row no:1
+\multicolumn{1}{p{6.49in}}{\fontsize{14pt}{16.8pt}\selectfont {\section*{\Centering {ОТЧЕТ О КУРСОВОЙ РАБОТЕ №1}}}}\\
+\hhline{~}
+%row no:2
+\multicolumn{1}{p{6.49in}}{\section*{\Centering {ДОБАВЛЕНИЕ ЗАЩИТЫ ОТ НЕСАНКЦИОНИРОВАННОГО ЗАПУСКА ОПЕРАЦИОННОЙ СИСТЕМЫ.}}
+} \\
+\hhline{~}
+%row no:3
+\multicolumn{1}{p{6.49in}}{\subsubsection*{\Centering {по курсу: ОПЕРАЦИОННЫЕ СИСТЕМЫ}}
+} \\
+\hhline{~}
+%row no:4
+\multicolumn{1}{p{6.49in}}{} \\
+\hhline{~}
+%row no:5
+\multicolumn{1}{p{6.49in}}{} \\
+\hhline{~}
+
+\end{tabular}
+ \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 2 ends here %%%%%%%%%%%%%%%%%%%%
+
+РАБОТУ ВЫПОЛНИЛ\par
+
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 3 starts here %%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.3in}p{1.0in}p{-0.04in}p{1.63in}p{-0.04in}p{1.63in}}
+%row no:1
+\multicolumn{1}{p{1.3in}}{СТУДЕНТ ГР. №} & 
+\multicolumn{1}{p{1.0in}}{\Centering {4236}} & 
+\multicolumn{1}{p{-0.04in}}{} & 
+\multicolumn{1}{p{1.63in}}{} & 
+\multicolumn{1}{p{-0.04in}}{} & 
+\multicolumn{1}{p{1.63in}}{\Centering {A. К. Панин}} \\
+\hhline{~-~-~-}
+%row no:2
+\multicolumn{1}{p{1.3in}}{} & 
+\multicolumn{1}{p{1.0in}}{} & 
+\multicolumn{1}{p{-0.04in}}{} & 
+\multicolumn{1}{p{1.63in}} {\Centering{\fontsize{10pt}{12.0pt}\selectfont  {подпись, дата}}} & 
+\multicolumn{1}{p{-0.04in}}{} & 
+\multicolumn{1}{p{1.63in}} {\Centering{\fontsize{10pt}{12.0pt}\selectfont  {инициалы, фамилия}}} \\
+\hhline{~~~~~~}
+
+\end{tabular}
+ \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 3 ends here %%%%%%%%%%%%%%%%%%%%
+
+
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\begin{Center}
+Санкт-Петербург \the\year{}
+\end{Center}\par
+
+\newpage
+
+\section*{Цель работы:}
+Знакомство с устройством ядра ОС Linux. Получение опыта разработки драйвера устройства.
+
+\section*{Индивидуальное задание:}
+Необходимо внести изменения в процесс загрузки ядра Linux, добавив проверку наличия подключенного через интерфейс USB flash-накопителя с заданным серийным номером. Если в процессе загрузки операционной системы нужный flash-накопитель подключен к одному из портов USB, то операционная система успешно загружается в штатном режиме. Если flash-накопитель с нужным серийным номером отсутствует, отобразить на экране предупреждение и таймер с обратным отсчетом (30 секунд), загрузка операционной системы при этом приостанавливается. По истечении обратного отсчета таймера должно происходить автоматическое выключение компьютера. При подключении к любому из USB-портов нужного flash-накопителя во время обратного отсчета таймера, таймер должен останавливаться, после чего операционная система должна загружаться в штатном режиме.
+
+\section*{Сравнение с аналогами:}
+
+В данном разделе рассматриваются существующие методы и подходы, аналогичные реализованному решению, а также их преимущества и недостатки. Проблема защиты операционной системы от несанкционированного запуска является актуальной, и несколько подходов предлагают решение этой задачи на разных уровнях системы. Рассмотрим несколько таких методов, включая проверки на уровне BIOS/UEFI, загрузчиков и системных скриптов.
+
+\subsection*{Защита на уровне BIOS/UEFI}
+
+Одним из распространенных методов защиты от несанкционированного запуска является использование функций, предоставляемых BIOS или UEFI. Эти системы позволяют ограничить доступ к системе, проверяя, какие устройства подключены к компьютеру, и позволяют задавать требования для загрузки системы.
+
+\textbf{Преимущества}:
+\begin{itemize}
+    \item Защита осуществляется на уровне аппаратуры, до загрузки операционной системы, что делает её труднодоступной для взлома.
+    \item Достаточно прост в использовании, не требует изменений в операционной системе.
+\end{itemize}
+
+\newpage
+
+\textbf{Недостатки}:
+\begin{itemize}
+    \item Механизмы защиты на уровне BIOS/UEFI ограничены и не предлагают гибкости для пользовательских сценариев, таких как проверка серийных номеров устройств.
+    \item Не всегда доступна возможность настроить BIOS/UEFI на уровне пользователя (например, в некоторых устройствах могут быть заблокированы настройки).
+    \item Уязвимость к обходу (например, с помощью изменения настроек в BIOS/UEFI или через использование устройств, которые обходят эту защиту).
+\end{itemize}
+
+В отличие от защиты на уровне BIOS, разработанный метод представляет собой гибкое решение, интегрированное непосредственно в ядро Linux, позволяющее задавать конкретные проверки и действия на уровне операционной системы.
+
+\subsection*{Использование загрузчиков GRUB и других альтернатив}
+
+Загрузчик GRUB (Grand Unified Bootloader) является важной частью процесса загрузки в операционных системах Linux. Он позволяет настраивать параметры загрузки и выполнять различные действия перед загрузкой операционной системы.
+
+Варианты защиты с использованием GRUB включают:
+\begin{itemize}
+    \item Проверка наличия определенных устройств при загрузке.
+    \item Настройка времени задержки, вывода сообщений и выполнения определенных команд в случае, если нужные устройства не найдены.
+\end{itemize}
+
+\textbf{Преимущества}:
+\begin{itemize}
+    \item Простота интеграции в существующую систему.
+    \item Возможность динамической проверки устройств, без необходимости внесения изменений в ядро.
+    \item Поддержка широкого спектра конфигураций загрузки.
+\end{itemize}
+
+\textbf{Недостатки}:
+\begin{itemize}
+    \item Ограниченность в функционале: GRUB не имеет полноценных средств для сложных проверок, таких как работа с серийными номерами устройств.
+    \item Невозможность выполнения более сложных операций, таких как остановка загрузки системы на определенное время или автоматическое выключение системы.
+\end{itemize}
+
+Метод, использующий только GRUB, ограничивает возможности контроля, в отличие от подхода, который предложен далее, где интеграция с ядром Linux позволяет более гибко контролировать процесс загрузки.
+
+\subsection*{Использование скриптов в initramfs}
+
+Другим подходом является использование скриптов в initramfs. Это позволяет добавить дополнительные проверки и выполнить нужные действия до того, как будет загружена операционная система. Initramfs (initial RAM filesystem) — это временная файловая система, которая загружается до основного корня файловой системы и предоставляет возможность выполнить операции до полной загрузки системы.
+
+Разработанный подход включает создание скрипта в initramfs, который проверяет наличие USB-флеш-накопителя и, в случае его отсутствия, приостанавливает процесс загрузки на 30 секунд с отображением сообщений на экране. В случае успешного подключения флеш-накопителя процесс загрузки продолжается.
+
+\textbf{Преимущества}:
+\begin{itemize}
+    \item Высокая гибкость в настройке процесса загрузки.
+    \item Возможность выполнения сложных операций на уровне операционной системы, таких как проверка серийных номеров и взаимодействие с пользователем.
+    \item Легкость интеграции с другими модулями и драйверами в Linux.
+\end{itemize}
+
+\textbf{Недостатки}:
+\begin{itemize}
+    \item Необходимость работы с ядром Linux и его компонентами (например, initramfs), что требует определенных знаний и навыков.
+    \item Может потребоваться модификация ядра для работы с нестандартными устройствами.
+\end{itemize}
+
+Этот метод предоставляет гораздо больше возможностей и контроля по сравнению с предыдущими подходами, так как позволяет выполнять сложные проверки и автоматические действия в зависимости от состояния системы.
+
+\subsection*{Сравнение методов}
+
+Сравнив различные подходы к решению проблемы, можно выделить несколько ключевых аспектов:
+\begin{itemize}
+    \item \textbf{Гибкость}: Использование скриптов в initramfs и драйвера ядра Linux предоставляет наибольшую гибкость и возможности для настройки, в то время как методы на уровне BIOS/UEFI и GRUB ограничены.
+    \item \textbf{Сложность внедрения}: Модификация загрузчика GRUB или BIOS/UEFI требует меньших усилий по сравнению с модификацией ядра и initramfs, однако с этим подходом связаны ограничения в функционале.
+    \item \textbf{Уровень безопасности}: Решение на уровне ядра Linux и initramfs обеспечивает лучший контроль над процессом загрузки и является более надежным, поскольку доступ к ядру труднее получить для злоумышленников.
+\end{itemize}
+
+Таким образом, использование скриптов в initramfs и изменение ядра представляется наиболее гибким и эффективным методом для защиты от несанкционированного запуска операционной системы.
+
+\section*{Техническая документация}
+
+В этом разделе приведена пошаговая инструкция по установке и использованию разработанного скрипта для проверки USB-накопителя в процессе загрузки системы.
+
+\subsection*{Предварительные требования}
+
+Перед началом установки убедитесь, что у вас есть следующие компоненты:
+\begin{itemize}
+    \item Операционная система Linux (на базе Debian/Ubuntu).
+    \item Установлены утилиты для работы с initramfs, такие как \texttt{initramfs-tools}.
+    \item Доступ к правам суперпользователя (root) для модификации загрузчика и скриптов.
+    \item Флеш-накопитель USB с уникальным серийным номером, который будет использоваться для проверки.
+\end{itemize}
+
+\subsection*{Шаг 1: Клонирование репозитория}
+
+1. Клонируйте репозиторий с исходным кодом скрипта для initramfs:
+   \begin{verbatim}
+   git clone https://github.com/Bolotnik-ss/os-option1.git
+   cd os-option1
+   \end{verbatim}
+
+\subsection*{Шаг 2: Получение серийного номера USB-накопителя}
+
+Для того чтобы настроить проверку нужного USB-накопителя, сначала необходимо получить его уникальный серийный номер. Для этого выполните следующие шаги:
+
+1. Подключите флеш-накопитель к одному из USB-портов вашего компьютера.
+
+2. Откройте терминал и выполните следующую команду:
+   \begin{verbatim}
+   lsusb
+   \end{verbatim}
+   Эта команда покажет все подключенные USB-устройства. В выводе будет информация о подключенных устройствах, похожая на следующую:
+   \begin{verbatim}
+   Bus 002 Device 003: ID 1234:abcd Example USB Flash Drive
+   \end{verbatim}
+
+3. Чтобы узнать серийный номер устройства, используйте следующую команду:
+   \begin{verbatim}
+   sudo lsusb -v -d 1234:abcd | grep iSerial
+   \end{verbatim}
+   Замените \texttt{1234:abcd} на идентификатор вашего устройства из вывода команды \texttt{lsusb}. Вы получите строку, похожую на:
+   \begin{verbatim}
+   iSerial                 3 1234567890ABCDEF
+   \end{verbatim}
+   В данном примере серийный номер устройства — \texttt{1234567890ABCDEF}.
+
+4. Скопируйте серийный номер устройства, так как он потребуется для настройки скрипта.
+
+\subsection*{Шаг 3: Редактирование скрипта}
+
+1. Откройте файл скрипта \texttt{option1.sh} для редактирования:
+   \begin{verbatim}
+   nano option1.sh
+   \end{verbatim}
+
+2. Найдите строку, которая отвечает за проверку серийного номера:
+   \begin{verbatim}
+   REQUIRED_SERIAL="5FD325C5E8AF4A8D"
+   \end{verbatim}
+
+3. Замените значение \texttt{5FD325C5E8AF4A8D} на серийный номер вашего флеш-накопителя, который вы получили на предыдущем шаге.
+
+4. Сохраните изменения и выйдите из редактора (\texttt{Ctrl + O}, затем \texttt{Enter} для сохранения и \texttt{Ctrl + X} для выхода).
+
+\subsection*{Шаг 4: Копирование скрипта в нужную директорию}
+
+1. Скопируйте скрипт из репозитория в каталог \texttt{/etc/initramfs-tools/scripts/init-bottom}:
+   \begin{verbatim}
+   sudo cp option1.sh /etc/initramfs-tools/scripts/init-bottom/
+   \end{verbatim}
+
+2. Убедитесь, что скрипт имеет права на выполнение:
+   \begin{verbatim}
+   sudo chmod +x /etc/initramfs-tools/scripts/init-bottom/option1.sh
+   \end{verbatim}
+
+\subsection*{Шаг 5: Пересборка initramfs}
+
+1. После того как скрипт будет скопирован в нужную директорию, необходимо пересобрать initramfs, чтобы изменения вступили в силу:
+   \begin{verbatim}
+   sudo update-initramfs -u
+   \end{verbatim}
+
+\subsection*{Шаг 6: (При необходимости) Обновление конфигурации GRUB}
+
+1. Если в процессе загрузки  вы не видите текстовые сообщения, а видите лишь графический интейрфейс загрузчика операционной системы, убедитесь, что в конфигурации GRUB отсутствуют параметры \texttt{quiet splash}. Откройте файл конфигурации GRUB для редактирования:
+   \begin{verbatim}
+   sudo nano /etc/default/grub
+   \end{verbatim}
+
+2. В строке \texttt{GRUB\_CMDLINE\_LINUX\_DEFAULT} уберите параметры \texttt{quiet splash}:
+   \begin{verbatim}
+   GRUB_CMDLINE_LINUX_DEFAULT=""
+   \end{verbatim}
+
+3. Сохраните изменения и обновите конфигурацию GRUB:
+   \begin{verbatim}
+   sudo update-grub
+   \end{verbatim}
+
+\subsection*{Использование разработанного скрипта}
+
+1. При следующей загрузке системы, если нужный USB-накопитель не будет подключен, загрузка будет приостановлена на 30 секунд, и на экране отобразится сообщение с обратным отсчетом. По истечении времени система автоматически выключится.
+
+2. Если флеш-накопитель будет подключен до завершения таймера, таймер остановится, и система продолжит загрузку в штатном режиме.
+
+\subsection*{Удаление скрипта и восстановление состояния}
+
+Если вам нужно удалить скрипт и вернуть систему в прежнее состояние:
+
+1. Удалите скрипт из каталога initramfs:
+   \begin{verbatim}
+   sudo rm /etc/initramfs-tools/scripts/init-bottom/option1.sh
+   \end{verbatim}
+
+2. Пересоберите initramfs:
+   \begin{verbatim}
+   sudo update-initramfs -u
+   \end{verbatim}
+
+3. (При необходимости) Восстановите параметры \texttt{quiet splash} в конфигурации GRUB и пересоберите его:
+   \begin{verbatim}
+   sudo nano /etc/default/grub
+   \end{verbatim}
+   Вставьте обратно:
+   \begin{verbatim}
+   GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+   \end{verbatim}
+   Затем обновите конфигурацию:
+   \begin{verbatim}
+   sudo update-grub
+   \end{verbatim}
+
+\subsection*{Решение проблем}
+
+\begin{itemize}
+    \item \textbf{Не отображается сообщение при отсутствии флеш-накопителя}: Убедитесь, что вы удалили параметры \texttt{quiet splash} в конфигурации GRUB и обновили конфигурацию с помощью \texttt{update-grub}.
+    \item \textbf{USB-накопитель не распознается}: Проверьте настройки скрипта и убедитесь, что серийный номер устройства совпадает с тем, который указан в конфигурации скрипта.
+\end{itemize}
+
+\section*{Выводы:}
+
+В ходе выполнения курсового проекта была разработана система защиты от несанкционированного запуска операционной системы Linux, которая проверяет наличие флеш-накопителя с заданным серийным номером в процессе загрузки. 
+
+Основными результатами работы являются:
+\begin{itemize}
+    \item Реализован скрипт, который выполняет проверку подключения флеш-накопителя и обеспечивает задержку загрузки системы с таймером в случае его отсутствия.
+    \item Скрирпт успешно интегрирован в процесс формирования initramfs, что позволяет его выполнение уже на этапе начальной загрузки.
+    \item Предусмотрено автоматическое выключение компьютера, если флеш-накопитель не был подключен в течение 30 секунд, а также предусмотрена остановка таймера при подключении нужного устройства.
+    \item Реализована простая настройка скрипта с помощью редактирования переменной, что делает систему гибкой и удобной для использования.
+    \item Обеспечена возможность восстановления исходного состояния системы в случае необходимости.
+\end{itemize}
+
+В ходе реализации проекта были получены навыки работы с процессом загрузки Linux, а также с инструментами для создания и модификации initramfs и GRUB. Работа с ядром и конфигурациями загрузчика расширила понимание внутреннего устройства операционных систем.
+
+В результате выполнения проекта была создана функциональная система защиты от несанкционированного запуска, которая может быть применена для повышения уровня безопасности систем, требующих дополнительной защиты от неавторизованного доступа. Это решение может быть полезным для использования в рабочих и учебных средах, где необходимо ограничить возможность загрузки системы без определенных устройств.
+
+Таким образом, проект успешно решает поставленную задачу и предоставляет эффективное решение для защиты операционной системы от несанкционированного запуска.
+
+\section*{Приложение. Листинг скрипта проверки:}
+
+\subsection*{option1.sh:}
+
+\begin{verbatim}
+#!/bin/sh
+
+SERIAL_NUMBER="5FD325C5E8AF4A8D"
+
+check_usb_device() {
+    for dev in /sys/bus/usb/devices/*; do
+        if [ -e "$dev/serial" ]; then
+            SERIAL=$(cat "$dev/serial")
+            if [ "$SERIAL" = "$SERIAL_NUMBER" ]; then
+                return 0
+            fi
+        fi
+    done
+    return 1
+}
+
+main() {
+    echo "Проверка наличия USB-устройства с серийным номером $SERIAL_NUMBER..." > /dev/console
+    if check_usb_device; then
+        echo "Устройство найдено. Продолжаем загрузку." > /dev/console
+        return 0
+    fi
+
+    echo "Устройство не найдено. Ожидание подключения..." > /dev/console
+    for i in $(seq 30 -1 1); do
+        echo "Осталось $i секунд..." > /dev/console
+        sleep 1
+        if check_usb_device; then
+            echo "Устройство подключено. Продолжаем загрузку." > /dev/console
+            return 0
+        fi
+    done
+
+    echo "Таймер истек. Выключение системы." > /dev/console
+    poweroff
+}
+main
+\end{verbatim}
+
+\end{document}
